@@ -1,0 +1,170 @@
+/* CSS reset start */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+  }
+a{
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+
+button,
+a {
+    cursor: pointer;
+    color: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+button,
+textarea,
+select {
+    appearance: none !important;
+    border-radius: 0;
+}
+
+ol, ul, li {
+    list-style:none;display:block;
+}
+
+/* CSS reset end */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    
+    background-color: #f8f7f3;
+    color: #1a24fb;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#root header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a24fb;
+    padding: 0 10px;
+    height: 40px;
+    width: 100%;
+    color: #f8f7f3;
+}
+
+#root header h4 {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+#root header .material-symbols-outlined {
+    font-size: 24px;
+}
+
+#root .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#root .content .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 20px;
+    max-width: 1280px;
+    margin-bottom: 100px;
+}
+
+#root .content .cards .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+    width: 380px;
+}
+
+#root .content .cards .card .number {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
+}
+
+#root .content .cards .card .textDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 472px;
+    padding: 40px;
+    border: 1px solid #1a24fb;
+    
+}
+
+#root .content .cards .card .textDiv .title {
+    min-height: 100px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#root .content .cards .card .textDiv .sub {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+#root .content .cards .card .textDiv .text {
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'Overpass', sans-serif;
+}
+
+#root .content .cards .card button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 18px;
+    width: 100%;
+    font-size: 14px;
+}
+
+#root .content .cards .card button:hover {
+    background-color: #1a24fb;
+    color: #f8f7f3;
+}
+
+#root .content .cards .card button span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media (max-width: 440px) {
+    #root .content .cards .card {
+        width: 86%;
+    }
+}
